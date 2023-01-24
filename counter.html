@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            counter
+        </title>
+        <script>
+            let counter = 0;
+            function count(){
+                
+                counter = counter + 1;
+                document.querySelector("em").innerHTML = counter;
+                if(counter % 10 === 0){
+                    alert(`${counter}`);
+                }
+            }
+            document.addEventListener('DOMContentLoaded',function(){
+                document.querySelector('button').addEventListener('click',count)
+            });
+            
+        </script>
+    </head>
+    <body>
+        <h1>
+            <em>0</em>
+        </h1>
+        <button>count</button>
+    </body>
+</html>
